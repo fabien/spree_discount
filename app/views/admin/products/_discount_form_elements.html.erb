@@ -1,0 +1,5 @@
+<%= f.field_container :discount_percentage do %>
+  <%= f.label :discount_percentage, t("discount_percentage")%><br />
+  <%= f.select(:discount_percentage, (0..20).map { |i| ["#{((i/2.0)*10).to_i}%", ((i/2.0)*10).to_i] }, {}, { :style => 'width: 200px' }) %>
+  <%= f.error_message_on :discount_percentage %>
+<% end %>

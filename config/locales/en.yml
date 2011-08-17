@@ -1,0 +1,17 @@
+---
+en:
+  discounts: Discount
+  discount_percentage: Discount Percentage
+  pre_discount_price: Suggested Retail Price
+  activerecord: 
+    attributes:
+      product:
+        discount_percentage: Discount Percentage
+      variant:
+        pre_discount_price: Suggested Retail Price
+    errors: 
+      models: 
+        variant: 
+          attributes: 
+            pre_discount_price: 
+              lower_than_price: "can't be lower than retail price"
