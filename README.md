@@ -6,6 +6,8 @@ It aids in the display of reduction percentages and original/recommended pricing
 
 Product#discount_percentage and Product#discount?
 
+Product#pre__discount__price and Product#reduced_price? (delegated to Master)
+
 Variant#pre__discount__price and Variant#reduced_price?
 
 Prices are intentionally left to the admin to update accordingly.
