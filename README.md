@@ -2,6 +2,14 @@
 
 The Spree Discount extension enables a simple way to display percentage discounts.
 
+It aids in the display of reduction percentages and original/recommended pricing vs. the current price:
+
+Product#discount_percentage and Product#discount?
+
+Variant#pre__discount__price and Variant#reduced_price?
+
+Prices are intentionally left to the admin to update accordingly.
+
 **WORK IN PROGRESS**
 
 ## Installation

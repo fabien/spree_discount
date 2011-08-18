@@ -6,7 +6,7 @@ Variant.class_eval do
   
   currency_exchange :pre_discount_price if respond_to?(:currency_exchange)
   
-  def discount?
+  def reduced_price?
     price < pre_discount_price
   end
   
@@ -16,7 +16,7 @@ Variant.class_eval do
   
   alias_method(:variant_options_hash_without_discount, :variant_options_hash) unless method_defined?(:variant_options_hash_without_discount)
   def variant_options_hash
-    hsh = discount? ? { :pre_discount_price => number_to_currency(self.pre_discount_price) } : {}
+    hsh = reduced_price? ? { :pre_discount_price => number_to_currency(self.pre_discount_price) } : {}
     variant_options_hash_without_discount.merge(hsh)
   end
   
