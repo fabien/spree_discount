@@ -2,6 +2,8 @@
 
 The Spree Discount extension enables a simple way to display percentage discounts.
 
+**WORK IN PROGRESS**
+
 ## Installation
 
 1. Add the following to your Gemfile
