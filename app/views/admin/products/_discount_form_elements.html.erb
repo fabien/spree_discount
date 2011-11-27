@@ -1,9 +1,7 @@
-<% unless @product.has_variants? %>
-  <%= f.field_container :pre_discount_price do %>
-    <%= f.label :pre_discount_price, t("pre_discount_price")%><br />
-    <%= f.text_field :pre_discount_price, :value => number_with_precision(@product.pre_discount_price, :precision => 2) %>
-    <%= f.error_message_on :pre_discount_price %>
-  <% end %>
+<%= f.field_container :pre_discount_price do %>
+  <%= f.label :pre_discount_price, t("pre_discount_price")%><br />
+  <%= f.text_field :pre_discount_price, :value => number_with_precision(@product.pre_discount_price, :precision => 2) %>
+  <%= f.error_message_on :pre_discount_price %>
 <% end %>
 <%= f.field_container :discount_percentage do %>
   <%= f.label :discount_percentage, t("discount_percentage")%><br />
