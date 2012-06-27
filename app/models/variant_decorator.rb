@@ -1,5 +1,7 @@
 Spree::Variant.class_eval do
   
+  attr_accessible :discount_percentage, :pre_discount_price
+  
   validate :pre_discount_price_cannot_be_less_than_price
   
   # spree_currency_exchange compatibility
