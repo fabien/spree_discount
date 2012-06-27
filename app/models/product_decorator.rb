@@ -1,5 +1,7 @@
 Spree::Product.class_eval do
   
+  attr_accessible :discount_percentage, :pre_discount_price
+  
   validates_numericality_of :discount_percentage, :only_integer => true, 
                             :greater_than_or_equal_to => 0,
                             :less_than_or_equal_to => 100
