@@ -1,4 +1,4 @@
-Variant.class_eval do
+Spree::Variant.class_eval do
   
   validate :pre_discount_price_cannot_be_less_than_price
   
